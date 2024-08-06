@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Restaurant Ordering App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Jimmy’s Diner</h1>
+            <p class="subtitle">The best burgers and pizzas in town.</p>
+        </header>
+        <main>
+            <section class="food-section" id="food-section"></section>
+            <section class="order-section" id="order-section">
+                <h2  class="order-title">Your order</h2>
+                <div  class="order-container" id="order-container"></div>
+                <div class="divider" id="divider"></div>
+                <div class="total" id="total"></div>
+                <button class="order-btn">Complete order</button>
+            </section>
+        </main>
+    <div>
+    <div class="modal-container" id="modal-container">
+        <h3 class="modal-title">Enter card details</h3>
+        <form class="payment-form" id="payment-form">
+          <input 
+          type="text" 
+          placeholder="Enter your name" 
+          name="clientName" 
+          aria-label="full name"
+          required
+          >
+          
+          <input 
+          type="number" 
+          placeholder="Enter your card number" 
+          name="clientCard" 
+          aria-label="card number"
+          required
+          >
+          
+          <input 
+          type="number" 
+          placeholder="Enter CVV" 
+          name="cardCVV" 
+          aria-label="card CVV"
+          required
+          >
+            <button type="submit" class="pay-btn">Pay</button>
+        </form>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
+
